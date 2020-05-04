@@ -12,10 +12,6 @@ from flask import Flask, request, Response, jsonify, send_from_directory, abort,
 import os
 import json
 
-import wget
-url = 'https://github.com/Mannysinghh/AIes-sjsu/blob/master/weights/yolov3.tf.data-00000-of-00001'
-wget.download(url, '/opt/build/repo/weights/')
-
 # customize your API through the following parameters
 classes_path = './data/labels/coco.names'
 weights_path = './weights/yolov3.tf'
